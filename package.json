@@ -1,0 +1,15 @@
+{
+  "name": "btroot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "mdx-deck deck.mdx",
+    "build": "mdx-deck build deck.mdx"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mdx-deck": "^1.6.3"
+  }
+}
