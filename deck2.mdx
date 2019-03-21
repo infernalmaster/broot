@@ -1,0 +1,280 @@
+export { default as theme } from './theme'
+
+import { Head, Image, Notes, Appear } from '@mdx-deck/components'
+import { Invert, Split, SplitRight, FullScreenCode, Horizontal} from '@mdx-deck/layouts'
+
+# Чи вартро вивчати JS в 2k19
+by Rostyslav Diachok
+
+---
+
+## Про мене
+
+
+<ul>
+  <Appear>
+    <li>Aug 2010 - УкрНДІгаз</li>
+    <li>Oct 2011 - Webmil</li>
+    <li>Oct 2011 - Feb-May 2016 - Eleks</li>
+    <li>Sep 2016 - Webmil</li>
+    <li>Jan 2018 - Relax & chill</li>
+    <li>Mar 2019 - Crunch.is</li>
+  </Appear>
+</ul>
+
+
+---
+
+# Part 1
+
+---
+
+## Трішки JS історії
+
+1995 / Netscape / Брендан Айк
+
+1997 року ECMA (European Computer Manufacturers Association) International опублікувала першу редакцію специфікації ECMA-262
+
+---
+
+## «Ця мова повинна була стати зручною для веб-дизайнерів та некваліфікованих програмістів»
+
+– Wikipedia
+
+---
+
+І частково тому JS має незовсім очевидні нюанси і легко «вистрілити собі в ногу».
+https://www.destroyallsoftware.com/talks/wat
+
+---
+
+Багато проблем можна вирішити додавши Typescript (це розширений JS з контролем вхідних параметрів)
+
+
+```javascript
+function hello(name) {
+    return "Hello, " + name;
+}
+
+hello("me");
+```
+
+```typescript
+function hello(name: string): string {
+    return "Hello, " + name;
+}
+
+hello("me");
+```
+
+---
+
+# NodeJS
+
+2009 / Ryan Dahl
+
+Dahl criticized the limited possibilities of the most popular web server in 2009, Apache HTTP Server, to handle a lot of concurrent connections
+
+Node.js combined Google's V8 JavaScript engine, an event loop, and a low-level I/O API.
+
+---
+
+# Part 2
+
+---
+
+## Google trends (JS, PHP, Java, Go, Ruby)
+
+https://goo.gl/N2uxKu
+
+<img src={require("file-loader!./1.png")}/>
+
+---
+
+## JS vs Кріштіану Роналду
+
+https://goo.gl/DkwF5z
+
+<img src={require("file-loader!./2.png")}/>
+
+---
+
+## StackOverflow:
+
+https://insights.stackoverflow.com/survey/2018/#technology
+
+- Most Popular Technologies (1 place)
+- Most Loved (7 / but Typescript 4)
+- Dreaded (-)
+- Wanted (2)
+
+> "For the sixth year in a row, JavaScript is the most commonly used programming language. Python has risen in the ranks, surpassing C# this year, much like it surpassed PHP last year. Python has a solid claim to being the fastest-growing major programming language."
+
+---
+
+## Octoverse by GitHub
+
+https://octoverse.github.com/projects#languages
+
+- top languages over time (1 place)
+- fastest growing languages (- / but TS 3 place)
+
+---
+
+## Tiobe index:
+
+https://www.tiobe.com/tiobe-index/
+
+<img src={require("file-loader!./3.png")}/>
+
+---
+
+## "JavaScript is used by 95.1% of all the websites."
+
+https://w3techs.com/technologies/details/cp-javascript/all/all
+
+---
+
+# part 3
+
+---
+
+## Вакансії в Україні (більше, ніж на інші технології)
+
+https://jobs.dou.ua/vacancies/?category=Front+End&search=react (700 results)
+
+https://www.linkedin.com/jobs/search/?keywords=JavaScript (2,947 results)
+
+---
+
+## Зарплати
+
+<img src={require("file-loader!./4.png")}/>
+
+- https://djinni.co/salaries/?job=JavaScript&year=2018
+- https://jobs.dou.ua/salaries
+- https://insights.stackoverflow.com/survey/2018/#top-paying-technologies
+
+---
+
+# part 4
+
+---
+
+## Найпоширеніша архітектура в IT:
+
+Бекенд - сервер, який зберігає і обробляє дані)
+
+"+"
+
+Фронетнд - веб/мобільні/десктопні додатки, які відображають дані з бекенду
+
+---
+
+Вся **веб** клієнтська частина пишеться на JS, але є малий відсоток інших:
+
+- **WASM (C, Go, Rust)** - це потенційна загроза
+- **Typescript**
+- Closure
+- Elm
+- Reason
+- Purescript
+- Dart
+
+---
+
+## Чому React?
+
+<img src={require("file-loader!./5.png")}/>
+
+https://2018.stateofjs.com/javascript-flavors/overview/
+https://2018.stateofjs.com/front-end-frameworks/overview/
+https://2018.stateofjs.com/awards/ - Most used REACT
+
+
+---
+
+## Mobile apps (React-native or Cordova, ionic, NativeScript)
+
+https://facebook.github.io/react-native/showcase
+
+---
+
+## Крос платформенні десктопні програми з ElectronJS https://electronjs.org/apps:
+
+- skype, discord,  slack,
+- figma, vscode, atom
+
+Бо простіше/дешевше (а це часто вирішує) зробити один раз і запускати на всіх системах, але тоді код не оптимальний, і програми повільніші і важчі порівняно з рідними
+
+---
+
+## Серверна частина теж дуже часто пишеться на JS використовуючи Node
+
+Це було хайпово, і багато великих компаній вклалися в інфраструктуру(бібліотеки і інструменти)
+
+Альтернативи:
+- Go(нове, модне і швидке)
+- Java, (C#) (кровавий ентерпрайс)
+- Ruby (стартапи)
+- PHP (Всяке різне)
+- Erlang/Closure/Rust
+
+
+---
+
+І все шо тільки можна уявити (ігри, machine learning, IOT і робота з хардваром), теж можна зробити на JS і точно є якісь готові приклади цього
+
+АЛЕ потрібно розуміти, що будь-який мультитул завжди програє спеціалізованим рішенням.
+
+## «Зараз на фронтенді немає потужних альтернатив JS»
+
+---
+
+# part 5
+
+---
+
+## Де вчитися
+Можна навчитися самом, якщо у вас вистачає мотивації і самодисципліни
+Course/Udacity/Egghead/khanAcedemy/CodeAcedemy
+
+https://github.com/jgthms/javascript-in-14-minutes/
+
+---
+
+## Почитати
+- You Don't Know JS https://github.com/getify/You-Dont-Know-JS
+- Eloquent JS (для новачків) https://karmazzin.gitbooks.io/eloquentjavascript_ru/content/
+- Блог про деталі http://dmitrysoshnikov.com
+
+---
+
+## Практика
+
+Як знання укр мови не робить нас поетами, так і знаняня мови програмування не робить нас програмістами. Потрібно практикуватися вирішувати задачі (набувати досівд) (пробувати/помилятися)
+
+https://projecteuler.net
+https://www.codewars.com/
+https://exercism.io/tracks/javascript
+https://leetcode.com/
+
+---
+
+## Про курс від Beetroot
+
+2 частини:
+* особливості js
+* React + redux
+
+Чи реально стати програмістом за 2 місяці?
+
+Ні!
+
+---
+
+## Контакти
+
+- https://t.me/diachok
+- https://www.facebook.com/diachok
+- https://github.com/infernalmaster

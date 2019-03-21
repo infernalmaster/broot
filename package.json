@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "mdx-deck deck.mdx",
-    "build": "mdx-deck build deck.mdx"
+    "start": "mdx-deck deck2.mdx",
+    "build": "mdx-deck build deck2.mdx -d dist2"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "mdx-deck": "^1.6.3"
+    "file-loader": "^3.0.1",
+    "mdx-deck": "^2.0.0"
   }
 }
